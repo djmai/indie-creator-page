@@ -1,62 +1,108 @@
-# CodeIgniter 4 Application Starter
+# Indie Creator Page
 
-## What is CodeIgniter?
+[![GitHub license](https://img.shields.io/github/license/ManuelGil/indie-creator-page)](./LICENSE)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+This is your platform to explore, connect and grow.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Requirements
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+- [PHP 8.1](https://www.php.net/releases/8_1_0.php) or later
+  - [intl](http://php.net/manual/en/intl.requirements.php)
+  - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+  - json (enabled by default - don't turn it off)
+  - [mbstring](http://php.net/manual/en/mbstring.installation.php)
+  - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
+  - xml (enabled by default - don't turn it off)
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Installation
 
-## Installation & updates
+### Copy this project
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+1. Clone or Download this repository
+2. Unzip the archive if needed
+3. Rename the folder if needed
+4. Start a Text Editor (VSCode, Sublime, PHPStorm, etc)
+5. Add the project folder to the editor
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+### Install the project
 
-## Setup
+You can install this wrapper via composer with the following commands:
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+#### _Development_
 
-## Important Change with index.php
+- Required a composer installation.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+```bash
+$ composer install
+```
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- Downloading [composer.phar](https://getcomposer.org/download/).
 
-**Please** read the user guide for a better explanation of how CI4 works!
+```bash
+$ sudo php composer.phar install
+```
 
-## Repository Management
+#### _Production_
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- Required a composer installation.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+```bash
+$ composer install --no-dev --optimize-autoloader
+```
 
-## Server Requirements
+- Downloading [composer.phar](https://getcomposer.org/download/).
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+```bash
+$ sudo php composer.phar install --no-dev --optimize-autoloader
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+## Configure the project
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+- Copy the [`env`](./env) file and call it `.env`.
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+```bash
+$ cp env .env
+```
+
+- Edit the environment variables in the .env file as you need.
+
+- Make www-data the owner to `writable` folder.
+
+```bash
+$ sudo chown www-data: writable/
+```
+
+- Start project
+
+```bash
+$ php spark serve
+```
+
+## Built With
+
+- COMPOSER 2.5.4 ([COMPOSER](https://getcomposer.org/download/))
+- CodeIgniter 4.3.7 ([CodeIgniter](https://www.codeigniter.com/download))
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md)
+
+## Contributing
+
+Thank you for considering contributing to alternative admin. The contribution guide can be found in the [CONTRIBUTING.md](./.github/CONTRIBUTING.md).
+
+## Code of Conduct
+
+In order to ensure that the alternate admin community is welcoming to all, please review and abide by the [CODE_OF_CONDUCT](./.github/CODE_OF_CONDUCT.md).
+
+## Authors
+
+- **Manuel Gil** - _Owner_ - [ManuelGil](https://github.com/ManuelGil)
+
+See also the list of [contributors](https://github.com/ManuelGil/indie-creator-page/contributors)
+who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the
+[MIT](https://opensource.org/licenses/MIT) for details.

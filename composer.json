@@ -1,17 +1,21 @@
 {
-    "name": "codeigniter4/appstarter",
-    "description": "CodeIgniter4 starter app",
+    "name": "manuelgil/indie-creator-page",
+    "description": "This is your platform to explore, connect and grow.",
     "license": "MIT",
     "type": "project",
-    "homepage": "https://codeigniter.com",
-    "support": {
-        "forum": "https://forum.codeigniter.com/",
-        "source": "https://github.com/codeigniter4/CodeIgniter4",
-        "slack": "https://codeigniterchat.slack.com"
-    },
+    "authors": [
+        {
+            "name": "ManuelGil",
+            "email": "atencion.ms@outlook.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "codeigniter4/framework": "^4.0"
+        "codeigniter4/framework": "^4.0",
+        "codeigniter4/translations": "^4.0",
+        "eftec/bladeone": "^4.9",
+        "sqids/sqids": "^0.4.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
