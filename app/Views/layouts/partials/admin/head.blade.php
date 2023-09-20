@@ -21,6 +21,4 @@
 <!-- Theme style -->
 <link rel="stylesheet" type="text/css" href="@asset('assets/admin/css/adminlte.min.css')" />
 
-<title>Indie Creator | @yield('title')</title>
-
 @canonical

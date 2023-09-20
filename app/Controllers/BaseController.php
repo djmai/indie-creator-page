@@ -86,7 +86,7 @@ abstract class BaseController extends Controller
         $this->sqids = new Sqids('', 6);
 
         $views = APPPATH . 'Views';
-        $cache = WRITEPATH . 'cache' . DIRECTORY_SEPARATOR . 'blade';
+        $cache = WRITEPATH . 'cache';
 
         if ('production' === ENVIRONMENT) {
             $this->templateEngine = new BladeOne(

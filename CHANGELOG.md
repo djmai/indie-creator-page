@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add migrations and seeders.
+
+### Changed
+
+- Change cache for blade template engie.
+
+### Fixed
+
+- Fix titles in views.
+
 [0.1.0]
 
 ### Added

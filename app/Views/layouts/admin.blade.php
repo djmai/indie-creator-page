@@ -5,6 +5,8 @@
 
     @include('layouts.partials.admin.head')
 
+    <title>Indie Creator | @yield('title')</title>
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
