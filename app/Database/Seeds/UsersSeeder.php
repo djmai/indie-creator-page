@@ -20,7 +20,7 @@ class UsersSeeder extends Seeder
                 'uuid' => '6f83cb9a-7f06-4d8f-a5f6-32a07d7a3c4e', // UUID
                 'username' => 'john_doe',
                 'email' => 'admin@m.ia',
-                'password' => password_hash('admin', PASSWORD_DEFAULT),
+                'password' => password_hash('password', PASSWORD_DEFAULT),
                 'avatar' => 'user1.jpg',
                 'name' => 'John Doe',
                 'label' => 'Developer',
@@ -35,7 +35,7 @@ class UsersSeeder extends Seeder
                 'uuid' => 'c0ab1e6d-9a7f-4b1c-8e9a-3f1c70d3b6a4', // UUID
                 'username' => 'jane_smith',
                 'email' => 'user@m.ia',
-                'password' => password_hash('user', PASSWORD_DEFAULT),
+                'password' => password_hash('password', PASSWORD_DEFAULT),
                 'avatar' => 'user2.jpg',
                 'name' => 'Jane Smith',
                 'label' => 'Designer',
